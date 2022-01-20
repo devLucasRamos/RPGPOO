@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using RPGPOO.Entities;
+
+Arus hero = new Arus("Arus",23,"Knight");
+
+Console.WriteLine(hero);
