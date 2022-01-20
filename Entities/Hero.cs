@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace RPGPOO.Entities
 {
-    internal class Arus
+    public abstract class Hero
     {
         public string Name { get; set; }
         public int Level { get; set; }
         public string HeroType { get; set; }
 
-        public Arus(string name, int level, string heroType)
+        public Hero(string name, int level, string heroType)
         {
             Name = name;
             Level = level;
@@ -20,9 +20,9 @@ namespace RPGPOO.Entities
         }
 
         public override string ToString() { 
-            return $"nome: {this.Name} level: {this.Level} classe: {this.HeroType}";
+            return $"Nome: {this.Name}, Level: {this.Level}, Classe: {this.HeroType}";
         }
-        public string Attack()
+        public virtual string Attack()
         {
             return $"{this.Name} Atacou com sua Espada!";
         }
