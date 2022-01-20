@@ -2,4 +2,4 @@
 
 Arus hero = new Arus("Arus",23,"Knight");
 
-Console.WriteLine(hero);
+Console.WriteLine(hero.Attack());

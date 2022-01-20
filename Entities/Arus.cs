@@ -18,5 +18,13 @@ namespace RPGPOO.Entities
             Level = level;
             HeroType = heroType;
         }
+
+        public override string ToString() { 
+            return $"nome: {this.Name} level: {this.Level} classe: {this.HeroType}";
+        }
+        public string Attack()
+        {
+            return $"{this.Name} Atacou com sua Espada!";
+        }
     }
 }
